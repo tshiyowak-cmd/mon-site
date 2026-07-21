@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UniGuide RDC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🎓 UniGuide RDC</h1>
+  <p>Le guide des universités de Kinshasa</p>
+</header>
+
+<section class="hero">
+  <h2>Bienvenue sur UniGuide</h2>
+  <p>Trouvez facilement une université à Kinshasa.</p>
+
+  <button>Explorer les universités</button>
+</section>
+<input
+  type="text"
+  id="recherche"
+  placeholder="🔎 Rechercher une université..."
+  onkeyup="rechercherUniversite()">
+
+<section class="universites">
+
+  <div class="carte">
+    <img src=https://www.unikin.ac.cd/fac/fpsysed/wp-content/uploads/2024/03/cropped-cropped-cropped-LOGO-Modifier1-2.png alt="Logo UNIKIN">
+
+    <h3>Université de Kinshasa (UNIKIN)</h3>
+
+    <p>La plus grande université publique de la RDC.</p>
+
+    <button onclick="voirPlusUNIKIN()">Voir plus</button>
+
+<div id="detailsUNIKIN" style="display:none;">
+ <div class="galerie">
+
+<a href="https://www.unikin.ac.cd/wp-content/uploads/2022/09/UNIKIN-2.jpg" tarzget="_blank">
+  <img src="https://www.unikin.ac.cd/wp-content/uploads/2022/09/UNIKIN-2.jpg" alt="Campus UNIKIN">
+</a>
+
+<a href="https://www.unikin.ac.cd/wp-content/uploads/2025/05/faculte-de-medecine.jpg" target="_blank">
+  <img src="https://www.unikin.ac.cd/wp-content/uploads/2025/05/faculte-de-medecine.jpg" alt="Faculté de médecine">
+</a>
+
+</div>
+  <p><strong>Adresse :</strong> Mont-Amba, Kinshasa</p>
+  <p><strong>Facultés :</strong> Médecine, Droit, Sciences, Économie, Polytechnique,psychologie,Agrégation,
+    Sciencesde Gestion ...</p>
+  <p><strong>Description :</strong> La plus grande université publique de la RDC.</p>
+</div>
+  </div>
+<div class="carte">
+  <img src=https://upload.wikimedia.org/wikipedia/fr/3/3e/UPN_Kinshasa_blason.png alt="Logo UPN">
+
+  <h3>Université Pédagogique Nationale (UPN)</h3>
+
+  <p>Université spécialisée dans la formation des enseignants.</p>
+
+  <button onclick="voirPlusUPN()">Voir plus</button>
+
+<div id="detailsUPN" style="display:none;">
+
+  <div class="galerie">
+    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSguH7p_NiqReJLesuQY3BZlezfNF6GqfeuZUiBzY613LPmFN-7CzAcVD-W&s=10" target="_blank">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSguH7p_NiqReJLesuQY3BZlezfNF6GqfeuZUiBzY613LPmFN-7CzAcVD-W&s=10" alt="UPN">
+    </a>
+
+    <a href="https://faculte.upnrdc.net/public/image/a%20(1).jpg" target="_blank">
+      <img src="https://faculte.upnrdc.net/public/image/a%20(1).jpg" alt="UPN">
+    </a>
+  </div>
+    
+    <p><strong>Adresse :</strong> Ngaliema, Kinshasa</p>
+    <p><strong>Facultés :</strong> Sciences de l'éducation, Lettres, Informatique...</p>
+    <p><strong>Description :</strong> Université spécialisée dans la formation des enseignants.</p>
+  </div>
+</div>
+<div class="carte">
+  <img src=https://e-journal.info/w/wp-content/uploads/2020/07/Controle-bancaire-en-Republique-Democratique-du-Congo-analyses-et-perspectives-de-2001-20071.png alt="Logo UPC">
+
+  <h3>Université Protestante au Congo (UPC)</h3>
+
+  <p>Une université privée reconnue pour la qualité de ses formations.</p>
+
+  <button onclick="voirPlusUPC()">Voir plus</button>
+
+  <div id="detailsUPC" style="display:none;">
+    <div class="galerie">
+  <a href="https://lh3.googleusercontent.com/-akqPOIVNGXA/VubAmW-RTjI/AAAAAAABuKY/gw4o8bcVJEE_OCs95vQzbEHsQLvmQJuLQ//DSC_0729.JPG?imgmax=500" target="_blank">
+    <img src="https://lh3.googleusercontent.com/-akqPOIVNGXA/VubAmW-RTjI/AAAAAAABuKY/gw4o8bcVJEE_OCs95vQzbEHsQLvmQJuLQ//DSC_0729.JPG?imgmax=500" alt="UPC">
+  </a>
+
+  <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSiCkhv_uN0uvI7X52svpQoPC0JT5cCJNggFrpjlR4Mi3h1meprvYa1E8D&s=10" target="_blank">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSiCkhv_uN0uvI7X52svpQoPC0JT5cCJNggFrpjlR4Mi3h1meprvYa1E8D&s=10" alt="UPC">
+  </a>
+</div>
+    <p><strong>Adresse :</strong> Lingwala, Kinshasa</p>
+    <p><strong>Facultés :</strong> Théologie, Droit, Économie, Médecine, Informatique...</p>
+    <p><strong>Description :</strong> L'UPC est une université privée de référence en RDC.</p>
+  </div>
+</div>  
+<div class="carte">
+  <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm8koVtz07KOSdJB8E8S70-kKdtg1K_Y7AEnTK1Rxxoy0lIpcfAZTQzmc&s=10 alt="Logo UCC">
+
+  <h3>Université Catholique du Congo (UCC)</h3>
+
+  <p>Une université reconnue pour l'excellence de ses formations.</p>
+
+  <button onclick="voirPlusUCC()">Voir plus</button>
+
+  <div id="detailsUCC" style="display:none;">
+    <div class="galerie">
+  <a href="https://ucc.ovh/wp-content/uploads/2024/05/DJI_0478-1000x500.jpg" target="_blank">
+    <img src="https://ucc.ovh/wp-content/uploads/2024/05/DJI_0478-1000x500.jpg" alt="UCC">
+  </a>
+
+  <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTogHrb0qtY0Xm3OSGWh3-fqK6KsehyuLXKcDpfkCpC4hm9yPee_l3dDY&s=10" target="_blank">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTogHrb0qtY0Xm3OSGWh3-fqK6KsehyuLXKcDpfkCpC4hm9yPee_l3dDY&s=10" alt="UCC">
+  </a>
+</div>
+    <p><strong>Adresse :</strong> Limete, Kinshasa</p>
+    <p><strong>Facultés :</strong> Droit, Économie, Médecine, Communication, Philosophie...</p>
+    <p><strong>Description :</strong> L'UCC est l'une des universités privées les plus réputées de la RDC.</p>
+  </div>
+</div> 
+<div class="carte">
+  <img src=https://ista-kin.org/ista-kin/ista/images/LOGO%20ISTA%20NEW%20FIN.png alt="Logo ISTA">
+
+  <h3>Institut Supérieur des Techniques Appliquées (ISTA)</h3>
+
+  <p>Établissement spécialisé dans les sciences, les technologies et l'ingénierie.</p>
+
+  <button onclick="voirPlusISTA()">Voir plus</button>
+
+  <div id="detailsISTA" style="display:none;">
+  <div class="galerie">
+  <a href="https://emergence-groupe.com/uploads/images/image_750x_67bdd4c757792.jpg" target="_blank">
+    <img src="https://emergence-groupe.com/uploads/images/image_750x_67bdd4c757792.jpg" alt="Université">
+  </a>
+
+  <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKGgc9K72kYUWZ3Bc8LhS-uEPw5e7Vb0PeMb5BJSX4Xg&s" target="_blank">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKGgc9K72kYUWZ3Bc8LhS-uEPw5e7Vb0PeMb5BJSX4Xg&s" alt="Université">
+  </a>
+</div>
+    <p><strong>Adresse :</strong> Avenue de l'Aérodrome, quartier Ndolo, commune de Barumbu, Kinshasa.</p>
+    <p><strong>Filières :</strong> Informatique, Génie civil, Électronique, Télécommunications, Électromécanique...</p>
+    <p><strong>Description :</strong> L'ISTA est un établissement d'enseignement supérieur spécialisé dans la formation des techniciens et ingénieurs en sciences et technologies.</p>
+  </div>
+</div> 
+<div class="carte">
+  <img src=https://media.licdn.com/dms/image/v2/C560BAQFRJSrUFJVscA/company-logo_200_200/company-logo_200_200/0/1630643400756?e=2147483647&v=beta&t=0xzW00F1SKXJsy2D-k8Lqje9i5_ZaCUA6dzNNEqUezI alt="Logo ISIPA">
+
+  <h3>Institut Supérieur d'Informatique, Programmation et Analyse (ISIPA)</h3>
+
+  <p>Institut supérieur spécialisé dans l'informatique, la programmation et les nouvelles technologies.</p>
+
+  <button onclick="voirPlusISIPA()">Voir plus</button>
+
+  <div id="detailsISIPA" style="display:none;">
+    <div class="galerie">
+  <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDKrsxWm8maH8BmM0Six-NUmaqGLj5tf1eTnfjhSMeUPV2OqrcKmTIvds&s=10" target="_blank">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDKrsxWm8maH8BmM0Six-NUmaqGLj5tf1eTnfjhSMeUPV2OqrcKmTIvds&s=10" alt="ISIPA">
+  </a>
+
+  <a href="https://africa-school-bucket3.s3.amazonaws.com/static/img/school/2022/04/13/isipa.png" target="_blank">
+    <img src="https://africa-school-bucket3.s3.amazonaws.com/static/img/school/2022/04/13/isipa.png" alt="ISIPA">
+  </a>
+</div>
+    <p><strong>Adresse :</strong> Avenue Shaumba, Gombe, Kinshasa.</p>
+   <p><strong>Adresse :</strong></p>
+<ul>
+  <li>Campus 1 : Avenue Shaumba, n° 7518, commune de la Gombe, Kinshasa.</li>
+  <li>Campus 2 : Avenue Kitega, commune de Lingwala, Kinshasa.</li>
+</ul> 
+    <p><strong>Filières :</strong> Informatique, Réseaux, Génie logiciel, Gestion informatique...</p>
+    <p><strong>Description :</strong> L'ISIPA est un établissement spécialisé dans la formation en informatique et en technologies de l'information.</p>
+  </div>
+</div> 
+<div class="carte">
+  <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSs3mpjtNjnZhLyAytxbbiZWGGgIQWkEIp-NPsaCARQjPVyJU9rgsVcac&s=10 alt="Logo ULK">
+
+  <h3>Université Libre de Kinshasa (ULK)</h3>
+
+  <p>Université privée offrant des formations dans plusieurs domaines.</p>
+
+ <button onclick="voirPlusULK()">Voir plus</button>
+
+<div id="detailsULK" style="display:none;">
+
+  <div class="galerie">
+    <a href="https://actualite.cd/sites/default/files/styles/800_600/public/2022-07/WhatsApp%20Image%202022-07-28%20at%2011.53.09.jpeg?itok=J9l2BAPh" target="_blank">
+      <img src="https://actualite.cd/sites/default/files/styles/800_600/public/2022-07/WhatsApp%20Image%202022-07-28%20at%2011.53.09.jpeg?itok=J9l2BAPh" alt="ULK">
+    </a>
+
+    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJxZ6JbIdI1HgwXoxUycG5P4K1cMxG-HBkSJ0XLIw0uw&s=10" target="_blank">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJxZ6JbIdI1HgwXoxUycG5P4K1cMxG-HBkSJ0XLIw0uw&s=10" alt="ULK">
+    </a>
+  </div>
+
+  <p><strong>Adresse :</strong> 15ᵉ Rue, Quartier Industriel, Commune de Limete, Kinshasa, RDC.</p>
+
+  <p><strong>Facultés :</strong> Droit, Sciences économiques et de gestion, Sciences informatiques, Santé publique, Sciences agronomiques, Sciences de l'éducation, Communication et autres.</p>
+
+  <p><strong>Description :</strong> L'Université Libre de Kinshasa (ULK) est une université privée de la République démocratique du Congo qui offre des formations dans plusieurs domaines afin de préparer les étudiants au monde professionnel.</p>
+
+</div> 
+</div>
+ <div class="carte">
+  <img src=https://pbs.twimg.com/profile_images/1767192689173274624/t0Uc02Vs.jpg alt="Logo HEC Kinshasa">
+
+  <h3>Haute École de Commerce de Kinshasa (HEC Kinshasa)</h3>
+
+  <p>Établissement d'enseignement supérieur spécialisé dans le commerce, la gestion et les sciences économiques.</p>
+
+  <button onclick="voirPlusHEC()">Voir plus</button>
+
+  <div id="detailsHEC" style="display:none;">
+  <div class="galerie">
+  <a href="https://i0.wp.com/mbote.cd/app/uploads/2024/07/IMG_1271.jpeg?fit=640%2C479&ssl=1" target="_blank">
+    <img src="https://i0.wp.com/mbote.cd/app/uploads/2024/07/IMG_1271.jpeg?fit=640%2C479&ssl=1" alt="HEC Kinshasa">
+  </a>
+
+  <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3MW6KGbvDuqJKhDKkpScHtyhKIGk185913nUd7AFr4gybHhKbWEs5yp2E&s=10" target="_blank">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3MW6KGbvDuqJKhDKkpScHtyhKIGk185913nUd7AFr4gybHhKbWEs5yp2E&s=10" alt="HEC Kinshasa">
+  </a>
+</div>
+    <p><strong>Adresse :</strong> Avenue de la Libération (ex-24 Novembre), commune de la Gombe, Kinshasa.</p>
+    <p><strong>Filières :</strong> Comptabilité, Gestion financière, Marketing, Management, Informatique de gestion.</p>
+    <p><strong>Description :</strong> La Haute École de Commerce de Kinshasa forme des professionnels dans les domaines du commerce, de la gestion et de l'économie.</p>
+  </div>
+</div> 
+ <div class="carte">
+  <img src=https://isau.optsolution.net/images/logo.png alt="Logo ISAU">
+
+  <h3>Institut Supérieur d'Architecture et d'Urbanisme (ISAU)</h3>
+
+  <p>Établissement spécialisé dans la formation en architecture, urbanisme et aménagement du territoire.</p>
+
+  <button onclick="voirPlusISAU()">Voir plus</button>
+
+  <div id="detailsISAU" style="display:none;">
+  <div class="galerie">
+  <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4JlCdMvplqScWLwiUwfKI0RS0D_htlH1xZX1mSOEFBa7AaZsmhsrVcI7-&s=10" target="_blank">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4JlCdMvplqScWLwiUwfKI0RS0D_htlH1xZX1mSOEFBa7AaZsmhsrVcI7-&s=10" alt="ISAU">
+  </a>
+
+  <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfbFK5i-DB9_oPYEMoQvzEiL8Yr9up-OefhJqOmC5QJMelvp-c-RUsUqs&s=10" target="_blank">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfbFK5i-DB9_oPYEMoQvzEiL8Yr9up-OefhJqOmC5QJMelvp-c-RUsUqs&s=10" alt="ISAU">
+  </a>
+</div>
+    <p><strong>Adresse :</strong> Avenue de la Libération (ex-24 Novembre), commune de la Gombe, Kinshasa.</p>
+    <p><strong>Filières :</strong> Architecture, Urbanisme, Aménagement du territoire.</p>
+    <p><strong>Description :</strong> L'ISAU est un établissement d'enseignement supérieur qui forme des architectes et des urbanistes capables de concevoir et d'aménager les espaces urbains.</p>
+  </div>
+</div> 
+ <div class="carte">
+  <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/UTBC_Kinshasa.png/960px-UTBC_Kinshasa.png alt="Logo UTBC">
+
+  <h3>Université Technologique Bel Campus (UTBC)</h3>
+
+  <p>Université privée proposant des formations dans les domaines des sciences, des technologies et de la gestion.</p>
+
+  <button onclick="voirPlusUTBC()">Voir plus</button>
+
+  <div id="detailsUTBC" style="display:none;">
+  <div class="galerie">
+  <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZAOgRDhlfw6hoEySDeXl0DYba498jbnS63mZoaKMZCQ&s=10" target="_blank">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZAOgRDhlfw6hoEySDeXl0DYba498jbnS63mZoaKMZCQ&s=10" alt="Bel Campus">
+  </a>
+
+  <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmrXnK7b4GKFKOa33jt2368WBiOzIDdbDCXaxXgkYgfh3cGTVbZjNrEkA&s=10" target="_blank">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmrXnK7b4GKFKOa33jt2368WBiOzIDdbDCXaxXgkYgfh3cGTVbZjNrEkA&s=10" alt="Bel Campus">
+  </a>
+</div>
+    <p><strong>Adresse :</strong> N° 17, 8ᵉ Rue, Quartier Industriel, commune de Limete, Kinshasa.</p>
+    <p><strong>Filières :</strong> Informatique, Génie civil, Économie, Gestion, Télécommunications.</p>
+    <p><strong>Description :</strong> L'UTBC est une université privée qui forme les étudiants dans plusieurs domaines scientifiques, technologiques et de gestion.</p>
+  </div>
+</div>
+ <div class="carte">
+  <img src=https://www.cours.launiversity.cd/wp-content/uploads/2022/07/LOGO-PNG.png alt="Logo Leadership Academia">
+
+  <h3>Leadership Academia University</h3>
+
+  <p>Université privée reconnue pour ses formations en gestion, informatique et autres domaines professionnels.</p>
+
+  <button onclick="voirPlusLeadership()">Voir plus</button>
+
+  <div id="detailsLeadership" style="display:none;">
+  <div class="galerie">
+  <a href="https://7sur7.cd/sites/default/files/styles/article_2022/public/2021-12/09308A0A-E4DD-44F6-BDF2-008A92887A54.jpeg?itok=YT-l0DJr" target="_blank">
+    <img src="https://7sur7.cd/sites/default/files/styles/article_2022/public/2021-12/09308A0A-E4DD-44F6-BDF2-008A92887A54.jpeg?itok=YT-l0DJr" alt="LAU">
+  </a>
+
+  <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4itNqx45IzGI4ozCs-ur2yuEwqxqXV589j_eKtjYnNsDOAUhVTKqvALI&s=10" target="_blank">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4itNqx45IzGI4ozCs-ur2yuEwqxqXV589j_eKtjYnNsDOAUhVTKqvALI&s=10" alt="LAU">
+  </a>
+</div>
+    <p><strong>Adresse :</strong> Avenue Tombalbaye, quartier Golf, commune de la Gombe, Kinshasa.</p>
+
+    <p><strong>Facultés :</strong></p>
+    <ul>
+      <li>Sciences Informatiques</li>
+      <li>Sciences Économiques et de Gestion</li>
+      <li>Droit</li>
+      <li>Sciences de l'Ingénieur</li>
+      <li>Santé Publique</li>
+    </ul>
+
+    <p><strong>Description :</strong> Leadership Academia University est une université privée qui met l'accent sur le leadership, l'innovation et la qualité de la formation.</p>
+  </div>
+</div> 
+  <div class="carte">
+  <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr5IRKOVKvVie76NoXBtD9d896ErDhdLR1fjMXggYIs7QPDk451xIYrhfw&s=10 alt="Logo URKIM">
+
+  <h3>Université Révérend Kim (URKIM)</h3>
+
+  <p>Université privée offrant des formations dans plusieurs domaines académiques et professionnels.</p>
+
+  <button onclick="voirPlusURKIM()">Voir plus</button>
+
+  <div id="detailsURKIM" style="display:none;">
+   <div class="galerie">
+  <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsNOBzUUeVrroPC25PflrBearo9kkiit6biNSbTvo6ePoJBOgvjuM7DYIn&s=10" target="_blank">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsNOBzUUeVrroPC25PflrBearo9kkiit6biNSbTvo6ePoJBOgvjuM7DYIn&s=10" alt="Revérend Kim">
+  </a>
+
+  <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS67cb21jGdlKDsANFbccOE6yHTQHStW5g3sanchMGI4TwmKYhapnm15e8B&s=10" target="_blank">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS67cb21jGdlKDsANFbccOE6yHTQHStW5g3sanchMGI4TwmKYhapnm15e8B&s=10" alt="Revérend Kim">
+  </a>
+</div> 
+    <p><strong>Adresse :</strong></p>
+    <ul>
+      <li>Campus 1 : Boulevard Lumumba, commune de Lingwala, Kinshasa.</li>
+      <li>Campus 2 : Quartier 1, commune de N'djili, Kinshasa.</li>
+    </ul>
+
+    <p><strong>Facultés :</strong></p>
+    <ul>
+      <li>Droit</li>
+      <li>Sciences Économiques et de Gestion</li>
+      <li>Sciences Informatiques</li>
+      <li>Sciences de l'Éducation</li>
+      <li>Théologie</li>
+    </ul>
+
+    <p><strong>Description :</strong> L'Université Révérend Kim (URKIM) est une université privée qui forme les étudiants dans plusieurs domaines et met l'accent sur l'excellence académique et le développement des compétences professionnelles.</p>
+  </div>
+</div>
+<div class="carte">
+  <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmCANkZUyx9u6q7exEmJI83OOwBu1B-GZmRk7wzt8d-GXx36dm3TeG5Yw&s=10 alt="Logo Académie des Beaux-Arts">
+
+  <h3>Académie des Beaux-Arts (ABA)</h3>
+
+  <p>Établissement d'enseignement supérieur spécialisé dans les arts, le design et l'architecture.</p>
+
+  <button onclick="voirPlusABA()">Voir plus</button>
+
+  <div id="detailsABA" style="display:none;">
+  <div class="galerie">
+  <a href="https://actualite.cd/sites/default/files/styles/800_600/public/2023-11/WhatsApp%20Image%202023-10-29%20at%2001.49.25.jpeg?itok=BqxKPMQu" target="_blank">
+    <img src="https://actualite.cd/sites/default/files/styles/800_600/public/2023-11/WhatsApp%20Image%202023-10-29%20at%2001.49.25.jpeg?itok=BqxKPMQu" alt="Université">
+  </a>
+
+  <a href="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/15/a6/3b/selfie-entre-amies.jpg?w=1100&h=1100&s=1" target="_blank">
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/15/a6/3b/selfie-entre-amies.jpg?w=1100&h=1100&s=1" alt="Université">
+  </a>
+</div>
+    <p><strong>Adresse :</strong> Avenue de la Libération (ex-24 Novembre), n° 1013, commune de la Gombe, Kinshasa.</p>
+
+    <p><strong>Facultés :</strong></p>
+    <ul>
+      <li>Arts plastiques</li>
+      <li>Arts graphiques</li>
+      <li>Design</li>
+      <li>Architecture d'intérieur</li>
+      <li>Céramique et Sculpture</li>
+    </ul>
+
+    <p><strong>Description :</strong> L'Académie des Beaux-Arts (ABA) est un établissement d'enseignement supérieur spécialisé dans la formation des artistes, designers et créateurs dans les domaines des arts visuels et des métiers de la création.</p>
+  </div>
+</div> 
+ <div class="carte">
+  <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcyPh6l1i7P7WP_HNwQhGXrb5ltQEQrGtmXaToigvJzrEwnAnzacDEN-Y5&s=10 alt="Logo USK">
+
+  <h3>Université Simon Kimbangu (USK)</h3>
+
+  <p>Université privée offrant des formations dans plusieurs domaines académiques et professionnels.</p>
+
+  <button onclick="voirPlusUSK()">Voir plus</button>
+
+  <div id="detailsUSK" style="display:none;">
+    <div class="galerie">
+  <a href="https://lh3.googleusercontent.com/-GXJ5dHjZJv4/VzyoKVneYOI/AAAAAAABysc/glssQolhUuocoZv1aCZOmYy2-QCav-UdQCHMYBhgL/R56A0436.JPG" target="_blank">
+    <img src="https://lh3.googleusercontent.com/-GXJ5dHjZJv4/VzyoKVneYOI/AAAAAAABysc/glssQolhUuocoZv1aCZOmYy2-QCav-UdQCHMYBhgL/R56A0436.JPG" alt="USK">
+  </a>
+
+  <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdhW9gEWS-Wi-WiRhFr47I9aUZ6BeA_MP0MweIRKMjdT3wxdUXAETUHPye&s=10" target="_blank">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdhW9gEWS-Wi-WiRhFr47I9aUZ6BeA_MP0MweIRKMjdT3wxdUXAETUHPye&s=10" alt="USK">
+  </a>
+</div>
+    <p><strong>Adresse :</strong> Avenue Bongolo, quartier Kauka, commune de Kalamu, Kinshasa.</p>
+
+    <p><strong>Facultés :</strong></p>
+    <ul>
+      <li>Droit</li>
+      <li>Sciences Économiques et de Gestion</li>
+      <li>Sciences Informatiques</li>
+      <li>Santé Publique</li>
+      <li>Sciences Sociales et Administratives</li>
+    </ul>
+
+    <p><strong>Description :</strong> L'Université Simon Kimbangu (USK) est un établissement d'enseignement supérieur qui forme les étudiants dans plusieurs disciplines afin de répondre aux besoins du développement du pays.</p>
+  </div>
+</div>
+<div class="carte">
+  <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj72G-_TJZAbFOc7eSXZGssxqrJZ2yVHvYQO_RBYudmE3kE-67h61BwdLV&s=10 alt="Logo ISTM">
+
+  <h3>Institut Supérieur des Techniques Médicales (ISTM)</h3>
+
+  <p>Établissement d'enseignement supérieur spécialisé dans les sciences et techniques médicales.</p>
+
+  <button onclick="voirPlusISTM()">Voir plus</button>
+
+  <div id="detailsISTM" style="display:none;">
+  <div class="galerie">
+  <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGVwJCGN-Ncaycc7KgNVTPJfNdT7NdukOnGZnPlSEawA7hlm4YO-8uH6LI&s=10" target="_blank">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGVwJCGN-Ncaycc7KgNVTPJfNdT7NdukOnGZnPlSEawA7hlm4YO-8uH6LI&s=10" alt="ISTM">
+  </a>
+
+  <a href="https://actualite.cd/sites/default/files/styles/800_600/public/2020-01/istm.jpg?itok=I1uSp0tp" target="_blank">
+    <img src="https://actualite.cd/sites/default/files/styles/800_600/public/2020-01/istm.jpg?itok=I1uSp0tp" alt="ISTM">
+  </a>
+</div>
+    <p><strong>Adresse :</strong> Route de Kimwenza, Vallée de la Funa, commune de Mont-Ngafula, Kinshasa.</p>
+
+    <p><strong>Filières :</strong></p>
+    <ul>
+      <li>Techniques de laboratoire médical</li>
+      <li>Imagerie médicale</li>
+      <li>Santé publique</li>
+      <li>Kinésithérapie</li>
+      <li>Sages-femmes</li>
+      <li>Nutrition et diététique</li>
+    </ul>
+
+    <p><strong>Description :</strong> L'ISTM est un établissement d'enseignement supérieur qui forme des professionnels qualifiés dans les domaines des techniques médicales et des sciences de la santé.</p>
+  </div>
+</div>  
+</section>
+  
+  <button id="haut" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+⬆ Retour en haut
+</button>
+<footer>
+  <p>© 2026 UniGuide RDC — Projet académique</p>
+  <p>Réalisé par Kethia Tshiyowa</p>
+</footer>  
+<script src="script.js"></script>
+</body>
+</html>
